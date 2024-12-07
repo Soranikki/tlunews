@@ -14,7 +14,6 @@ class CategoryService {
                 $categorysItem = new Category($row['id'], $row['name']);
                 $categorys[] = $categorysItem;
             }
-            echo "Kết nối thành";
             return $categorys;
         }
         catch(PDOException $e){

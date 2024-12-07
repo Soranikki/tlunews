@@ -14,7 +14,6 @@ class UserService {
                 $usersItem = new User($row['id'], $row['username'],$row['password'],$row['role']);
                 $users[] = $usersItem;
             }
-            echo "Kết nối thành";
             return $users;
         }
         catch(PDOException $e){

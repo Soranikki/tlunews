@@ -14,7 +14,6 @@ class NewService {
                 $newsItem = new News($row['id'], $row['title'], $row['content'], $row['image'], $row['created_at'], $row['category_id']);
                 $news[] = $newsItem;
             }
-            echo "Kết nối thành công!";
             return $news;
         }
         catch(PDOException $e){
