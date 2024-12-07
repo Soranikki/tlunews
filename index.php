@@ -2,8 +2,6 @@
 require_once('./config/config.php');
 require_once APP_ROOT.'./services/NewService.php';
 
-echo APP_ROOT;
-
 $newService = new NewService();
 $news = $newService->getAllNew();
 

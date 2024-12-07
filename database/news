@@ -17,7 +17,7 @@ INSERT INTO news (id, title, content, image, created_at, category_id) VALUES
 (7, 'Startup công nghệ', 'Những công ty khởi nghiệp tiềm năng trong lĩnh vực AI.', 'startup.jpg', '2023-08-15', 37),
 (8, 'Thời trang mùa đông', 'Xu hướng thời trang mới nhất cho mùa đông năm nay.', 'fashion.jpg', '2023-08-01', 15),
 (9, 'Sức khỏe cho mọi người', 'Làm thế nào để duy trì sức khỏe trong mùa dịch.', 'health.jpg', '2023-07-20', 38),
-(10, 'Du lịch sinh thái', 'Những địa điểm du lịch xanh đáng trải nghiệm.', 'travel.jpg', '2023-07-10', 80);
+(10, 'Du lịch sinh thái', 'Những địa điểm du lịch xanh đáng trải nghiệm.', 'travel.jpg', '2023-07-10', 80),
 (22, 'Chính sách giáo dục mới', 'Cập nhật thông tin mới về chính sách giáo dục.', 'education_policy.jpg', '2012-03-13', 3),
 (23, 'Công nghệ AI tiên tiến', 'Ứng dụng trí tuệ nhân tạo trong ngành y tế.', 'ai_health.jpg', '2001-08-18', 4),
 (24, 'Món ngon miền Tây', 'Khám phá những món ăn đặc sản miền Tây.', 'food_mientay.jpg', '2020-01-03', 12),
