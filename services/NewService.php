@@ -1,11 +1,10 @@
 <?php
-require_once('../tlunews/config/config.php');
-require_once APP_ROOT.'/tlunews/models/News.php';
+require_once APP_ROOT.'/models/News.php';
 
 class NewService {
     public function getAllNew(){
         try{
-            $conn = new PDO("mysql:host=localhost;dbname=databkt", "root","");
+            $conn = new PDO("mysql:host=localhost;dbname=TinTuc", "root","");
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $sql = "SELECT * FROM news";
             $stmt = $conn->query($sql);

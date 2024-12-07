@@ -1,6 +1,8 @@
 <?php
-require_once('./tlunews/config/config.php');
-require_once APP_ROOT.'./tlunews/services/NewService.php';
+require_once('./config/config.php');
+require_once APP_ROOT.'./services/NewService.php';
+
+echo APP_ROOT;
 
 $newService = new NewService();
 $news = $newService->getAllNew();
