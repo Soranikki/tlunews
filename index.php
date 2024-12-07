@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>hdjsdoaod</h1>
+    <div class="container">
+
+    <h1>Yahoo</h1>
+    </div>
 </body>
 </html>
