@@ -1,4 +1,4 @@
 RewriteEngine On
 
 # Check if the request is for the root folder
-RewriteRule ^$ ./views/admin/login.php
+# RewriteRule ^$ ./views/admin/login.php
