@@ -1,6 +1,6 @@
 Phân công:
 
-  Trần Gia Khánh: Models, Routing, Controllers, Debugging, hiển thị data trong CSDL lên bảng.
+  Trần Gia Khánh: Models, Routing, Controllers, Debugging, hiển thị data trong CSDL lên bảng cho người dùng khách.
   
   Mai Sỹ Duy Khánh: Thêm, sửa xoá tin tức, Services, kết nối cơ sở dữ liệu cho quản trị viên
   
