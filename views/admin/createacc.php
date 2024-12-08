@@ -56,14 +56,14 @@
         <input type="password" class="form-control" id="password" placeholder="Password" required>
       </div>
 
-      <a  href="login.html" class='btn btn-success'>GO!</a>
+      <a  href="login.php" class='btn btn-success'>GO!</a>
       <!-- <button type="submit" class="btn btn-custom w-100" >GO!</button> -->
     </form>
   </div>
   <script>
     document.getElementById('createacc').addEventListener('submit', function(event) {
       event.preventDefault(); // Ngăn chặn gửi form
-      window.location.href = 'login.html'; // Chuyển hướng đến trang login
+      window.location.href = 'login.php';
     });
   </script>
 
