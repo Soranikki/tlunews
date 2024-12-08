@@ -1,4 +1,5 @@
 Phân công:
+
 Trần Gia Khánh: Models, Routing, Controllers, Debugging, hiển thị data trong csdl lên bảng.
 
 Mai Sỹ Duy Khánh: Thêm, sửa xoá tin tức; kết nối cơ sở dữ liệu, các Services.
