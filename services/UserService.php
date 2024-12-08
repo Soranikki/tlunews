@@ -3,9 +3,12 @@ require_once APP_ROOT.'/models/User.php';
 
 class UserService {
     public function getAllUser(){
+        // kết nối với CSDL
         try{
             $conn = new PDO("mysql:host=localhost;dbname=TinTuc", "root","");
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            // Truy vấn dữ liệu
             $sql = "SELECT * FROM users";
             $stmt = $conn->query($sql);
 

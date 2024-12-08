@@ -3,25 +3,22 @@ require_once APP_ROOT.'/models/News.php';
 
 class NewService {
     public function getAllNew(){
-        try{
-            $conn = new PDO("mysql:host=localhost;dbname=TinTuc", "root","");
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "SELECT * FROM news";
-            $stmt = $conn->query($sql);
+            // Kết nối với CSDL
+            $dbConnection = new DBConnection();
+            $conn = $dbConnection->getConnection();
+            if($conn != null) {
+                // Truy Vấn dữ liệu
+                $sql = "SELECT * FROM news ORDER BY id ASC";
+                $stmt = $conn->query($sql);
 
-            $news = [];
-            while($row = $stmt->fetch()){
-                $newsItem = new News($row['id'], $row['title'], $row['content'], $row['image'], $row['created_at'], $row['category_id']);
-                $news[] = $newsItem;
+                // Xuất dữ liệu
+                $news = [];
+                while($row = $stmt->fetch()){
+                    $newsItem = new News($row['id'], $row['title'], $row['content'], $row['image'], $row['created_at'], $row['category_id']);
+                    $news[] = $newsItem;
+                }
+                return $news;
             }
-            return $news;
-        }
-        catch(PDOException $e){
-            echo "Kết nối thất bại: " . $e->getMessage();
-            // $conn = null;
-            // echo $e->getMessage();
-            return $news = [];
         }
     }
-}
 ?>
