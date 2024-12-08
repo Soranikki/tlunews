@@ -10,7 +10,6 @@
 <body>
     <div class="container">
         <h3 class="text-center text-uppercase text-success my-3">Quản lý tin tức</h3>
-        <a href="<?= DOMAIN.'views/admin/news/add.php'; ?>" class="btn btn-success">Thêm tin tức mới</a>
         <table class="table">
   <thead>
     <tr>
@@ -20,8 +19,6 @@
       <th scope="col">image</th>
       <th scope="col">created_at</th>
       <th scope="col">category_id</th>
-      <th scope="col">Sửa</th>
-      <th scope="col">Xoá</th>
     </tr>
   </thead>
   <tbody>
@@ -35,16 +32,6 @@
                 <td><?= $new->getImage(); ?></td>
                 <td><?= $new->getCreatedAt(); ?></td>
                 <td><?= $new->getCategoryId(); ?></td>
-                <td>
-                    <a href="<?= DOMAIN.'views/admin/news/edit.php?id='.$new->getId(); ?>">
-                        <i class="bi bi-pencil-square"></i>
-                    </a>
-                </td>
-                <td>
-                    <a href="<?= DOMAIN.'views/admin/news/delete.php?id='.$new->getId(); ?>">
-                        <i class="bi bi-trash3"></i>
-                    </a>
-                </td>
             </tr>
     <?php
         }

@@ -1,76 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .login-container {
-            width: 300px;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .login-container h1 {
-            margin: 0 0 15px;
-            font-size: 24px;
-            color: #333;
-        }
-        .login-container form {
-            display: flex;
-            flex-direction: column;
-        }
-        .login-container input {
-            margin-bottom: 15px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .login-container button {
-            padding: 10px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .login-container button:hover {
-            background-color: #0056b3;
-        }
-        .error {
-            color: red;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?= DOMAIN.'views/admin/login.css'; ?>">
+  <title>Sign In</title>
+
 </head>
 <body>
-    <div class="login-container">
-        <h1>Admin Login</h1>
-
-        <!-- Display error message -->
-        <?php if (isset($error)): ?>
-            <div class="error"><?= htmlspecialchars($error) ?></div>
-        <?php endif; ?>
-
-        <form method="POST" action="/admin/login">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1733395445302-297d4cd1f82c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sign In Image" class="img-fluid">
+    <div class="card-body">
+      <h2 class="card-title text-center">Sign In</h2>
+      <p class="text-center text-small">
+        Don't have an account? <a href="<?= DOMAIN.'views/admin/createacc.php'; ?>" class="text-primary">Create Account</a>
+      </p>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-Mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-check mb-3 text-start">
+            <input type="checkbox" class="form-check-input" id="keepLoggedIn">
+            <label for="keepLoggedIn" class="form-check-label">Keep Me Logged in</label>
+          </div>
+        <div class="d-grid">
+            <a  href="admin.html" class='btn btn-success'>Sign In</a>
+          <!-- <button type="submit" class="btn btn-primary"">Sign In</button> -->
+        </div>
+      </form>
     </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

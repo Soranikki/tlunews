@@ -6,7 +6,7 @@ require_once('./libs/DBConnection.php');
 // $homeController = new HomeController();
 // $homeController->index();
 
-$controller = isset($_GET['controller']) ? $_GET['controller'] : 'home';
+$controller = isset($_GET['controller']) ? $_GET['controller'] : 'login';
 $action = isset($_GET['action']) ? $_GET['action'] : 'index';
 
 if ($controller == 'home') {
@@ -17,10 +17,11 @@ if ($controller == 'home') {
     require_once APP_ROOT.'/controllers/AdminController.php';
     $adminController = new AdminController();
     $adminController->index();
-} else if ($controller == 'news') {
-    require_once APP_ROOT.'/controllers/NewsController.php';
-    $newsController = new NewsController();
-    $newsController->index();
-} else {
+} else if ($controller == 'login') {
+    require_once APP_ROOT.'/controllers/LoginController.php';
+    $loginController = new LoginController();
+    $loginController->index();
+}
+else {
     echo "Trang không tồn tại";
 }
