@@ -13,6 +13,6 @@ Dependency:
 + PHP, MySQL, Laragon
 
 Extra Notes:
-+ Laragon root folder: www/tlunews/
++ Laragon root folder: www/tlunews/ (git clone ở Laragon root folder)
 + Website URL: http://localhost/tlunews/
 + APP_ROOT: ./tlunews/
