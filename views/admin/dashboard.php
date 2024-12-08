@@ -10,6 +10,10 @@
 <body>
     <div class="container">
         <h3 class="text-center text-uppercase text-success my-3">Quản lý tin tức</h3>
+        <form action="" method="GET" class="mb-3 d-flex">
+            <input type="text" name="search" class="form-control me-2" placeholder="Tìm kiếm tin tức..." value="<?= isset($_GET['search']) ? htmlspecialchars($_GET['search']) : ''; ?>">
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </form>
         <a href="<?= DOMAIN.'views/admin/news/add.php'; ?>" class="btn btn-success">Thêm tin tức mới</a>
         <table class="table">
   <thead>
