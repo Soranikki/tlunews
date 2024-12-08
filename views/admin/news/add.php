@@ -1,7 +1,8 @@
 <?php
-require_once APP_ROOT.'/config/config.php';
+require_once('../../../config/config.php');
 require_once APP_ROOT.'/services/NewService.php';
 require_once APP_ROOT.'/models/News.php';
+require_once APP_ROOT.'/libs/DBConnection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Lấy dữ liệu từ form

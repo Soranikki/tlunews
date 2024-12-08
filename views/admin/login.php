@@ -30,8 +30,8 @@
             <label for="keepLoggedIn" class="form-check-label">Keep Me Logged in</label>
           </div>
         <div class="d-grid">
-            <a  href="admin.html" class='btn btn-success'>Sign In</a>
-            <a  href="admin.html" class='btn btn-success'>Sign In</a>
+            <a  href="http://localhost/tlunews/index.php?controller=home" class='btn btn-success'>Sign In</a>
+            <a  href="http://localhost/tlunews/index.php?controller=admin" class='btn btn-success'>Sign In as admin</a>
         </div>
       </form>
     </div>

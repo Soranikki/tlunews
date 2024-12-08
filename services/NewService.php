@@ -2,7 +2,7 @@
 require_once APP_ROOT.'/models/News.php';
 
 class NewService {
-    public function getAllNews(): array
+    public function getAllNew(): array
     {
         $dbConnection = new DBConnection();
         $conn = $dbConnection->getConnection();
